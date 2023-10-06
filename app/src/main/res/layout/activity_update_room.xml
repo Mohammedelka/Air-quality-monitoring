@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bottomNavigationBackground"
+    tools:context=".AddRoom">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/bariol_bold"
+        android:text="@string/room_update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/go_back"
+        android:focusable="true"
+        android:padding="10dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="30dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="100dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center" 
+            android:layout_marginBottom="140dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingHorizontal="15dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/NameInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="12dp"
+                android:fontFamily="serif-monospace"
+
+                android:hint="@string/room_title"
+                android:textSize="16sp"
+
+                app:boxStrokeColor="@color/black_transparent"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/black_transparent"
+                app:helperText="Required*"
+
+                app:helperTextTextColor="@color/DarkRed"
+                app:hintTextColor="@color/black_transparent"
+                app:layout_constraintBottom_toTopOf="@+id/CapacityInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/outline_home_24"
+                app:startIconTint="@color/black_transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bariol_regular"
+                    android:inputType="text"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CapacityInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/bariol_regular"
+
+                android:hint="@string/room_capacity"
+                android:textSize="16sp"
+
+                app:boxStrokeColor="@color/black_transparent"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/black_transparent"
+
+                app:helperTextTextColor="@color/DarkRed"
+                app:hintTextColor="@color/black_transparent"
+                app:layout_constraintBottom_toTopOf="@+id/SizeInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/capacity"
+                app:startIconTint="@color/black_transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bariol_regular"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SizeInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="100dp"
+                android:fontFamily="@font/bariol_regular"
+
+                android:hint="@string/room_size"
+                android:textSize="16sp"
+
+                app:boxStrokeColor="@color/black_transparent"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/black_transparent"
+
+                app:helperTextTextColor="@color/DarkRed"
+                app:hintTextColor="@color/black_transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/size"
+                app:startIconTint="@color/black_transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bariol_regular"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+        <Button
+            android:id="@+id/proceed"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:text="@string/proceed"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/black_transparent"
+            android:fontFamily="@font/bariol_bold"/>
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/room_details"
+            android:textColor="@color/black_transparent"
+            android:textSize="30sp"   />
+        
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

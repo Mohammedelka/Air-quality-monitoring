@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "278778493168",
+    "firebase_url": "https://project-s4-8c4af-default-rtdb.firebaseio.com",
+    "project_id": "project-s4-8c4af",
+    "storage_bucket": "project-s4-8c4af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278778493168:android:3cd00a6f577aaa4a57ea35",
+        "android_client_info": {
+          "package_name": "androidapp.meryam.bookingapplications4project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278778493168-5i1ifmjf72a5hcopt39bn4t7p50h61d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6KaT3M5m37GCXWgt3lz4MW1qHY3HjME4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278778493168-5i1ifmjf72a5hcopt39bn4t7p50h61d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278778493168:android:f9e2e20bd800613d57ea35",
+        "android_client_info": {
+          "package_name": "com.projects4.airquality"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278778493168-5i1ifmjf72a5hcopt39bn4t7p50h61d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6KaT3M5m37GCXWgt3lz4MW1qHY3HjME4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278778493168-5i1ifmjf72a5hcopt39bn4t7p50h61d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278778493168:android:df199e0b2f9884ae57ea35",
+        "android_client_info": {
+          "package_name": "com.projects4.aqm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278778493168-5i1ifmjf72a5hcopt39bn4t7p50h61d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6KaT3M5m37GCXWgt3lz4MW1qHY3HjME4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278778493168-5i1ifmjf72a5hcopt39bn4t7p50h61d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160sp"
+    android:background="@color/bottomNavigationBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="140dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/identification"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:text="@string/room_name"
+            android:gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bariol_bold"  />
+
+        <TextView
+            android:id="@+id/capacity"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:text="@string/capacity_2_persons"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"
+            android:textColor="#808080"
+            android:fontFamily="@font/bariol_bold"  />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:text="@string/size_20_meters_squared"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"
+            android:textColor="#808080"
+            android:fontFamily="@font/bariol_bold"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_more"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="40dp"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bariol_bold"  />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/logo" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/arr"
+            app:tint="@color/black"
+            android:contentDescription="@string/proceed" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bottomNavigationBackground"
+    tools:context=".DetectOccupancy">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/bariol_bold"
+        android:text="@string/detect_occupancy"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/go_back"
+        android:focusable="true"
+        android:padding="10dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="30dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center" 
+            android:layout_marginBottom="190dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CarbInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/bariol_bold"
+                android:hint="@string/co2_level_ppm"
+                android:textSize="16sp"
+                app:boxStrokeColor="@color/black_transparent"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black_transparent"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/DarkRed"
+                app:hintTextColor="@color/black_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/carbb"
+                app:startIconTint="@color/black_transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/aa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bariol_regular"
+                    android:inputType="text"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/HumInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bariol_regular"
+                android:hint="@string/humiditys"
+                android:textSize="16sp"
+                app:boxStrokeColor="@color/black_transparent"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black_transparent"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/DarkRed"
+                app:hintTextColor="@color/black_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CarbInputLayout"
+                app:startIconDrawable="@drawable/humm"
+                app:startIconTint="@color/black_transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bariol_regular"
+                    android:inputType="text"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TempInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bariol_regular"
+                android:hint="@string/temperature_c"
+                android:textSize="16sp"
+                app:boxStrokeColor="@color/black_transparent"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black_transparent"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/DarkRed"
+                app:hintTextColor="@color/black_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/HumInputLayout"
+                app:startIconDrawable="@drawable/tempp"
+                app:startIconTint="@color/black_transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bariol_regular"
+                    android:inputType="text"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/LightInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bariol_regular"
+                android:hint="@string/light_level_lux"
+                android:textSize="16sp"
+                app:boxStrokeColor="@color/black_transparent"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black_transparent"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/DarkRed"
+                app:hintTextColor="@color/black_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TempInputLayout"
+                app:startIconDrawable="@drawable/luxx"
+                app:startIconTint="@color/black_transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bariol_regular"
+                    android:inputType="text"
+                    android:textColor="#808080"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/proceed"
+                android:layout_marginTop="20dp"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom|center"
+                android:backgroundTint="@color/black_transparent"
+                android:fontFamily="@font/bariol_bold"
+                android:text="@string/proceed"
+                android:textAllCaps="true"
+                app:layout_constraintTop_toBottomOf="@+id/LightInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/bariol_bold"
+                android:text="@string/this_room_is_occupied"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proceed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/room_details"
+            android:textColor="@color/black_transparent"
+            android:textSize="30sp"   />
+        
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

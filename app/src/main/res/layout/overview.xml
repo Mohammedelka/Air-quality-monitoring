@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bottomNavigationBackground"
+    tools:context=".RoomMonitor">
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/go_back"
+        android:padding="10dp"
+        android:src="@drawable/more"
+        card_view:layout_constraintBottom_toTopOf="@+id/card_view_1"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/bariol_bold"
+        android:text="@string/air_quality_status"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.601"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1"
+        android:layout_width="380dp"
+        android:layout_height="270dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.483"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/air_quality_indicators"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/cpb_1"
+            tools:progress="60" />
+
+        <TextView
+            android:id="@+id/perc_value"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/perc"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/aqi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/comment_value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:text="@string/good_air_quality"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/tertiary" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_2"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/card_view_4"
+        card_view:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="@string/co2"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:textSize="13sp"
+            android:textColor="#808080"
+            android:text="@string/created_from_metabolic_activity_crowded_indicator"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="15sp"
+            android:text="@string/ppm"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <TextView
+            android:id="@+id/co2_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="22sp"
+            android:text="@string/xxx"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/co2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/logo"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_3"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/card_view_5"
+        card_view:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/lighting"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/bariol_bold"
+            android:textColor="#808080"
+            android:text="@string/measurement_of_light_which_quantifies_the_brightness"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/lux"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lux_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/xxx"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/idea"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/logo"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_4"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="60dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="@string/hum"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:textSize="13sp"
+            android:textColor="#808080"
+            android:text="@string/concentration_of_water_vapor_present_in_the_air"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="15sp"
+            android:text="@string/perc"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <TextView
+            android:id="@+id/hum_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:textSize="22sp"
+            android:text="@string/xxx"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/water"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/logo" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_5"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/temp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/bariol_bold"
+            android:textColor="#808080"
+            android:text="@string/measurement_of_how_hot_or_cold_the_room_is"
+            android:textSize="13sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/c"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/temp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/xxx"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/thermometer"
+            android:contentDescription="@string/logo"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:contentDescription="@string/go_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:src="@drawable/back"
+        card_view:layout_constraintBottom_toTopOf="@+id/card_view_1"
+        card_view:layout_constraintEnd_toStartOf="@+id/textView2"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.0"
+        android:focusable="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bottomNavigationBackground"
+    tools:context=".DashBoard">
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:contentDescription="@string/go_back"
+        android:focusable="true"
+        android:padding="10dp"
+        android:src="@drawable/settings"
+        card_view:layout_constraintBottom_toTopOf="@+id/card_view_1"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bariol_bold"
+        android:text="@string/my_dashboard"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.125"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/secondary"
+        android:id="@+id/card_view_1"
+        android:layout_width="380dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.483"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bariol_bold"
+            android:textColor="@color/white"
+            android:text="@string/hello_username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/building"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bariol_regular"
+            android:text="@string/building_number_1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bariol_regular"
+            android:textColor="@color/white"
+            android:text="@string/user_domain_com"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/user"
+            android:contentDescription="@string/logo">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/card_view_2"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/card_view_4"
+        card_view:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="@string/rooms"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:textSize="13sp"
+            android:textColor="#808080"
+            android:text="@string/view_the_list_of_rooms_added"
+            android:fontFamily="@font/bariol_bold"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/room"
+            android:contentDescription="@string/logo"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/card_view_3"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/card_view_5"
+        card_view:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/air_quality"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/bariol_bold"
+            android:textColor="#808080"
+            android:text="@string/check_the_air_quality_indicators"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/aqi"
+            android:contentDescription="@string/logo"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_4"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="110dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/air_purifier"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/turn_on_off_the_fan"
+            android:textColor="#808080"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/fan" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_5"
+        android:layout_width="178dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="110dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardCornerRadius="20dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/detect_occupancy"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="@string/predict_if_the_room_is_occupied_or_unoccupied"
+            android:textColor="#808080"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/det" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/bariol_bold"
+        android:textSize="17sp"
+        card_view:layout_constraintBottom_toTopOf="@+id/emerg"
+        android:text="@string/what_should_you_do_if_the_air_quality_is_dangerous" />
+
+    <Button
+        android:id="@+id/emerg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/request_emergency"
+        android:backgroundTint="@color/black_transparent"
+        android:fontFamily="@font/bariol_bold"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.497"
+        card_view:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
