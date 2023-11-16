@@ -2,8 +2,10 @@
 
 The Air Quality Monitoring app, developed using Java on Android Studio, focuses on collecting real-time data from an Arduino prototype and transmitting it through Firebase Realtime Database. The primary objective of the app is to monitor air quality. Additionally, a room management feature has been implemented for practice purposes, although technically there is only a single room associated with the prototype.
 
+<h1 align="center">
+  <img alter="demo" src="images/demo.gif" height="700" weight="800" >
+</h1>
 
-<img src="images/demo.gif" >
 
 
 Upon launching the app, users are prompted to authenticate or sign up to create a new account. Once logged in, they are presented with a dashboard displaying four options:
